@@ -1,0 +1,167 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Light mode by default for professional legal environment */
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type="date"] {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #003d82;
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+.result-container {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.deadline-time {
+  margin-top: 0;
+  color: #555;
+}
+
+.seconds-container {
+  margin: 1.5rem 0;
+}
+
+.seconds-display {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: #0056b3;
+}
+
+.seconds-label {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.formatted-time {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #d32f2f;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Expired state */
+.expired {
+  color: #d32f2f !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  #app {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
